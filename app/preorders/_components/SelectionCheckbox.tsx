@@ -31,7 +31,7 @@ export function RowCheckbox({ id }: { id: string }) {
       aria-label="Select row"
       checked={isSelected(id)}
       onChange={() => toggle(id)}
-      className="h-4 w-4 cursor-pointer rounded border-neutral-300 accent-neutral-900"
+      className="h-4 w-4 cursor-pointer rounded border-neutral-300 accent-neutral-900 mt-1"
     />
   );
 }

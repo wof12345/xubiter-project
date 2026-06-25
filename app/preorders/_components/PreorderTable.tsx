@@ -11,11 +11,11 @@ export function PreorderTable({ preorders }: { preorders: Preorder[] }) {
       <table className="w-full text-left text-sm">
         <thead>
           <tr className="border-b border-neutral-200 text-neutral-500">
-            <th className="w-10 px-4 py-3">
+            <th className="w-10 px-4 py-0 pt-1 ">
               <SelectAllCheckbox />
             </th>
             {headers.map((header) => (
-              <th key={header} className="px-4 py-3 font-semibold">
+              <th key={header} className="px-4 pl-2 py-3 font-semibold">
                 {header}
               </th>
             ))}

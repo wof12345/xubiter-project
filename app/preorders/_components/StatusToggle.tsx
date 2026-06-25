@@ -39,12 +39,12 @@ export function StatusToggle({
       aria-label={`Toggle status for ${name}`}
       disabled={isPending}
       onClick={handleToggle}
-      className={`relative inline-flex h-6 w-11 items-center rounded-full transition disabled:opacity-60 ${
+      className={`relative inline-flex h-6 w-11 items-center rounded-lg transition disabled:opacity-60 ${
         optimistic ? "bg-neutral-900" : "bg-neutral-300"
       }`}
     >
       <span
-        className={`inline-block h-5 w-5 transform rounded-full bg-white shadow transition ${
+        className={`inline-block h-5 w-5 transform rounded-md bg-white shadow transition ${
           optimistic ? "translate-x-5" : "translate-x-0.5"
         }`}
       />

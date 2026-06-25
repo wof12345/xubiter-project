@@ -8,10 +8,10 @@ import { DeleteButton } from "./DeleteButton";
 export function PreorderRow({ preorder }: { preorder: Preorder }) {
   return (
     <tr className="border-b border-neutral-100 last:border-0 hover:bg-neutral-50/60">
-      <td className="px-4 py-3">
+      <td className="px-4 pr-2 py-3">
         <RowCheckbox id={preorder.id} />
       </td>
-      <td className="px-4 py-3 font-semibold text-neutral-900">{preorder.name}</td>
+      <td className="px-4 pl-2 py-3 font-semibold text-neutral-900">{preorder.name}</td>
       <td className="px-4 py-3 text-neutral-700">{preorder.products}</td>
       <td className="px-4 py-3 text-neutral-700">{preorder.preorderWhen}</td>
       <td className="px-4 py-3 text-neutral-700">{formatDateTime(preorder.startsAt)}</td>
